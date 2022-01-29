@@ -1,0 +1,18 @@
+.download {
+    width: 100%;
+    padding: 114px 0;
+    text-align: center;
+    &-title {
+        font-size: 1.875rem;
+        line-height: 4.375rem;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    &-row {
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0.3125rem;
+    }
+}

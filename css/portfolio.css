@@ -1,0 +1,71 @@
+.portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio-work {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  max-height: 340px;
+  padding: 0 0 23% 0;
+  border: 2px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-work .mask-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 67, 67, 0.8);
+  z-index: 2;
+  padding: 110px 0 128px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.portfolio-work .mask-work-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.portfolio-work .mask-work-descr {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+.portfolio-work .mask-work:hover {
+  opacity: 1;
+}
+.portfolio-work img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

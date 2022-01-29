@@ -1,0 +1,140 @@
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+@import "../scss/fonts.scss";
+@import "../scss/cdn.scss";
+@import "./components/header.scss";
+@import "./components/portfolio.scss";
+@import "./components/features.scss";
+@import "./components/team.scss";
+@import "./components/download.scss";
+@import "./components/footer.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font: $raleway;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    width: 370px;
+    height: 80px;
+    margin: 5.125rem auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #FF4343;
+    line-height: 78px;
+    transition: .3s;
+    &:hover {
+        background-color: #E71414;
+    }
+    &:active {
+        background-color: #FF4343;
+        box-shadow: 4px 4px 30px #FF4343;
+    }
+}
+
+i {
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 2.4375rem !important;
+    transition: .5s;
+}
+.fa-facebook-f:hover {
+    color: rgb(66, 103, 178);
+}
+.fa-twitter:hover {
+    color: rgb(29, 161, 242);
+}
+.fa-linkedin:hover {
+    color: rgb(40, 103, 178);
+}
+
+
+// nav {
+//     display: flex;
+//     border: $border;
+//     ul {
+//         display: flex;
+//         li {
+//             background-color: blueviolet;
+//             a {
+//                 text-decoration: none;
+//                 background-color: $orange;
+//                 &:hover {
+//                     color: $grey;
+//                 }
+//             };
+//         }
+//     }
+// }
+
+// .title {
+//     font-style: 36px;
+//     font-weight: 500;
+//     color: $grey;
+//     &::after {
+//         content: "";
+//         width: 67px;
+//         height: 2px;
+//         background-color: $orange;
+//         margin: auto;
+//     }
+// }
+
+// .card {
+//     @include card;
+// }
+
+// .tools {
+//     display: flex;
+//     background-color: $orange;
+//     &-item {
+//         font-style: 25px;
+//         font-weight: 900;
+//     }
+//     &-description {
+//         text-decoration: none;
+//     }
+// }
+
+// .awesome-row {
+//     display: flex;
+//     background-color: $orange;
+//     @media (max-width: 968px) {
+//         background-color: $grey;
+//         flex-wrap: wrap;
+//     }
+//     @media (max-width: 524px) {
+//         background-color: $grey;
+//         flex-wrap: wrap;
+//     }
+//     @media (max-width: 468px) {
+//         display: block;
+//         .container {
+//             width: 90%;
+//         };
+//     }
+//     @media (max-width: 320px) {
+//         background-color: $grey;
+//         flex-wrap: wrap;
+//     }
+// }

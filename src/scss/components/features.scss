@@ -1,0 +1,30 @@
+.features {
+    width: 100%;
+    padding: 116px 0;
+    &-list {
+        width: 100%;
+        min-height: 700px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    &-item {
+        flex: 0 1 32%;
+        text-align: center;
+        &-title {
+            font-size: 1.5rem;
+            line-height: 4.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: rgb(45, 48, 51);
+            margin-top: 29px;
+        }
+        &-descr {
+            font-size: 1.125rem;
+            line-height: 1.3125rem;
+            color: rgb(108, 114, 121);
+            margin-top: 20px;
+        }
+    }
+}
